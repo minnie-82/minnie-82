@@ -101,15 +101,11 @@ export default function Home() {
                         />
                       </div>
                     ))
-                ) : (
-                  <div>No Such Data Found</div>
-                )}
+                ) : null}
               </div>
             </div>
           ))
-        ) : (
-          <div>No Such Data</div>
-        )}
+        ) :null}
       </div>
 
       <div className="mt-40">
