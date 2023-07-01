@@ -8,7 +8,7 @@ export default function MyOrder() {
 
   const fetchMyOrder = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/myorderData", {
+      const response = await axios.post("https://food-app-mern.onrender.com/api/myorderData", {
         email: localStorage.getItem('userEmail')
       });
       const data = response.data.orderData;

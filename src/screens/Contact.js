@@ -40,7 +40,7 @@ const Contact = () => {
     nav("/");
 
     try {
-      const response = await axios.post('http://localhost:5000/api/contactus', data);
+      const response = await axios.post('https://food-app-mern.onrender.com/api/contactus', data);
 
       console.log('Data saved successfully:', response.data);
 

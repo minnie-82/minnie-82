@@ -13,7 +13,7 @@ const LoginPage = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/login", { email, password });
+      const response = await axios.post("https://food-app-mern.onrender.com/api/login", { email, password });
       const { success } = response.data;
 
       console.log("RESPONSE DATA ", response.data)

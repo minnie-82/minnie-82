@@ -14,7 +14,7 @@ export default function Home() {
 
   const loadData = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/foodData");
+      const response = await axios.post("https://food-app-mern.onrender.com/api/foodData");
       console.log(response.data.foodItems, response.data.foodCategory);
       setFoodCat(response.data.foodCategory);
       setFoodItems(response.data.foodItems);
